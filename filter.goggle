@@ -1,0 +1,88 @@
+! name: Kids Search
+! description: Used for safer image searching
+! public: true
+! author: 
+! homepage: none
+! avatar:rgb(6, 54, 2)
+
+! Boost Kid-Specific Subdomains and Paths
+*kids*$boost=3,inurl
+
+! Discard Social Sites
+$discard,site=facebook.com
+$discard,site=instagram.com
+$discard,site=tiktok.com
+$discard,site=x.com
+$discard,site=twitter.com
+$discard,site=pinterest.com
+$discard,site=deviantart.com
+$discard,site=tumgik.com
+
+! Downrank Popular Negative or Gossip News Sites
+$downrank=3,site=cnn.com
+$downrank=3,site=cnbc.com
+$downrank=3,site=nbcnews.com
+$downrank=3,site=independent.co.uk
+$downrank=3,site=foxnews.com
+$downrank=3,site=huffpost.com
+$downrank=3,site=politico.com
+$downrank=3,site=nytimes.com
+$downrank=3,site=abcnews.go.com
+$downrank=3,site=axios.com
+$downrank=3,site=cbsnews.com
+$downrank=3,site=thehill.com
+$downrank=3,site=msnbc.com
+$downrank=3,site=washingtonpost.com
+$downrank=3,site=newsweek.com
+$downrank=3,site=apnews.com
+$downrank=3,site=usnews.com
+$downrank=3,site=theatlantic.com
+
+! Remove Discussion Sites
+$discard,site=reddit.com
+$discard,site=quora.com
+
+! Discard Violent Domains or Paths
+*gore*$discard,inurl
+*violent*$discard,inurl
+*killing*$discard,inurl
+*murder*$discard,inurl
+*blood*$discard,inurl
+*horror*$discard,inurl
+
+! Discard Drug Domains and Paths
+*drugs*$discard,inurl
+*cocaine*/$discard
+*heroin*$discard,inurl
+*alcohol*$discard,inurl
+*cannabis*$discard,inurl
+
+! Discard Profanity Domains or Paths
+*fuck*$discard,inurl
+*shit*$discard,inurl
+
+! Discard Mature Domains or Paths
+*mature*$discard,inurl
+*adult*$discard,inurl
+*xxx*$discard,inurl
+*nsfw*$discard,inurl
+*porn*$discard,inurl
+*nude*$discard,inurl
+*erotic*$discard,inurl
+*sex*$discard,inurl
+*lesbian*$discard,inurl
+*gay*$discard,inurl
+*lgbt*$discard,inurl
+*lgbtq*$discard,inurl
+*lgbtqia*$discard,inurl
+*transgender*$discard,inurl
+*milf*$discard,inurl
+*vagina*$discard,inurl
+*penis*$discard,inurl
+*nudity*$discard,inurl
+*naked*$discard,inurl
+*nudist*$discard,inurl
+*nudism*$discard,inurl
+*r34*$discard,inurl
+*rule34*$discard,inurl
+*hentai*$discard,inurl
