@@ -1,9 +1,7 @@
-! name: Kids Search - Additional Art Hosting Blocks
-! description: Used for safer image searching, blocking  
+! name: Kids Search Art Block
+! description: Used for safer image searching and blocking of art hosts
 ! public: false
-! author: PrivatePerson
-! homepage: none
-! avatar:rgb(6, 54, 2)
+! author: Private Person
 
 ! Boost Kid-Specific Subdomains and Paths
 *kids*$boost=3,inurl
