@@ -1,6 +1,6 @@
-! name: Kids Search
-! description: Used for safer image searching
-! public: true
+! name: Kids Search - Additional Art Hosting Blocks
+! description: Used for safer image searching, blocking  
+! public: false
 ! author: 
 ! homepage: none
 ! avatar:rgb(6, 54, 2)
